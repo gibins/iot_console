@@ -9,8 +9,6 @@ import org.atmosphere.config.service.Ready;
 import org.atmosphere.cpr.AtmosphereResource;
 import org.atmosphere.cpr.AtmosphereResourceEvent;
 
-import exp.gibin.app.configuration.JacksonEncoderDecoder;
-
 //"/chatteer/{room: [a-zA-Z][a-zA-Z_0-9]*}"
 @ManagedService(path = "/chathome")
 public class AtmServelets {
@@ -30,7 +28,6 @@ public class AtmServelets {
 			
 			atmosphereResource.getResponse().write(message);
 		}
-
 		
 	}
 
